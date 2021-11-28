@@ -1,0 +1,95 @@
+@font-face{
+	font-family: permanet-maker;
+ 	src:url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+}
+@font-face{
+	font-family: varela round;
+	src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap');
+}
+
+body{
+	margin: 0;
+	font-family: 'Permanent Marker', cursive;
+}
+.nav-bar{
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	background-color: green;
+	overflow: hidden;
+}
+#nav-bar{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	background-color:rgb(27,41,58);
+	transition: margin-left 2s;
+}
+#nav-bar>*{
+	color: white;
+}
+#imgContainer{
+	align-content: center;
+	text-align: center;
+}
+#profile-image{
+	width: 50%;
+	height: 150px;
+	border-radius: 50%;
+	outline-style:outset;
+	outline-color: rgb(199,238,237);
+	margin-top: 10px;
+
+}
+li>*{
+	color: white;
+	text-decoration: none;
+}
+#name-holder{
+	text-align: center;
+}
+a >i{
+	margin-right: 4px;
+}
+.link{
+	margin-bottom: 5%;
+	width:100%;
+	transition: background-color 2s;
+}
+a{
+	width: 100%;
+	color: rgb(147,147,147);
+	margin-left: 5%;
+}
+
+.link:hover{
+	background-color: red;
+}
+.main-content{
+	margin-left: 300px;
+}
+.bi-list,.bi-x-lg{
+	display: none;
+	cursor: pointer;
+	width: 10px;
+}
+.bi-x-lg{
+	margin-left: 90%;
+}
+
+
+@media only screen and (max-width: 768px){
+	#nav-bar{
+		overflow:hidden;
+		width:0;
+	}
+	.bi-list,.bi-x-lg{
+		display: block;
+	}
+	.main-content{
+		margin-left: 0px;
+	}
+}
